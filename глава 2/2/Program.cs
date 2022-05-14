@@ -21,7 +21,7 @@ namespace _2
         }
         public override string Vivod()
         {
-            return base.Vivod() + " Название изделия - " + name_product + "Количество механизмов в изделии - " + count + " ";
+            return base.Vivod() + " Название изделия - " + name_product + " Количество механизмов в изделии - " + count + " ";
         }
     }
     public class Knot : Detail
@@ -83,7 +83,34 @@ namespace _2
         }
         public virtual string Vivod()
         {
-            return "Название детали - " + name_detail + " Номер детали - " + number + "Материал детали -" + material + " ";
+            return "Название детали - " + name_detail + " Номер детали - " + number + " Материал детали - " + material + " ";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            oper: Console.WriteLine("1-создание механизма, 2-создание узла, 3-создание изделия");
+            string operation = Console.ReadLine();
+            switch (operation)
+            {
+                case "1":
+                    Mechanism mechanism = new Mechanism();
+                    Console.WriteLine(mechanism.Vivod());
+                    break;
+                case "2":
+                    Knot knot = new Knot();
+                    Console.WriteLine(knot.Vivod());
+                    break;
+                case "3":
+                    Product product = new Product();
+                    Console.WriteLine(product.Vivod());
+                    break;
+                default:
+                    Console.WriteLine("Выберите одну из предложенных операций:");
+                    goto oper;
+            }
+            Console.ReadLine();
         }
     }
 }
