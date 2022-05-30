@@ -11,22 +11,22 @@ namespace _2
             int x = int.Parse(Console.ReadLine());
             Console.Write("y = ");
             int y = int.Parse(Console.ReadLine());
-            choose: Console.WriteLine("Выберите операцию: 1 – сложение, 2 – вычитание, 3 – умножение, 4 – деление, 5 - выход");
+            Console.WriteLine("Выберите операцию: 1 – сложение, 2 – вычитание, 3 – умножение, 4 – деление");
             int operation = int.Parse(Console.ReadLine());
             switch(operation)
             {
                 case 1:
                     Operation add = (x, y) => x + y;
                     Console.WriteLine("x + y = " + add(x, y));
-                    goto choose;
+                    break;
                 case 2:
                     Operation sub = (x, y) => x - y;
                     Console.WriteLine("x - y = " + sub(x, y));
-                    goto choose;
+                    break;
                 case 3:
                     Operation mul = (x, y) => x * y;
                     Console.WriteLine("x * y = " + mul(x, y));
-                    goto choose;
+                    break;
                 case 4:
                     try
                     {
@@ -37,8 +37,7 @@ namespace _2
                     {
                         Console.WriteLine(ex.Message);
                     }
-                    goto choose;
-                case 5: break;
+                    break;
             }
             Console.ReadLine();
         }
