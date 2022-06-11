@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<airport>
+	<Air>
+		<destination>Рим</destination>
+	    <flight>367298</flight>
+	    <time>12:30</time>
+	</Air>
+	<Air>
+	    <destination>Минск</destination>
+	    <flight>347582</flight>
+	    <time>18:00</time>
+	</Air>
+</airport>
