@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<airport>
+	<Air>
+		<destination>Рим</destination>
+	    <flight>367298</flight>
+	    <time>12:30</time>
+	</Air>
+	<Air>
+	    <destination>Минск</destination>
+	    <flight>347582</flight>
+	    <time>18:00</time>
+	</Air>
+    <Air>
+	    <destination>Мадрид</destination>
+	    <flight>956784</flight>
+	    <time>06:20</time>
+	</Air>
+    <Air>
+	    <destination>Москва</destination>
+	    <flight>562217</flight>
+	    <time>23:55</time>
+	</Air>
+    <Air>
+	    <destination>Киев</destination>
+	    <flight>482095</flight>
+	    <time>16:40</time>
+	</Air>
+</airport>
